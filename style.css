@@ -1,0 +1,83 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f8f9fb;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 60px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header {
+  text-align: center;
+  border-bottom: 2px solid #007acc;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #007acc;
+  margin: 0;
+}
+
+.contact {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.contact a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  border-left: 4px solid #007acc;
+  padding-left: 10px;
+  color: #007acc;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin: 8px 0;
+  color: #333;
+}
+
+.sub {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+ul {
+  margin: 5px 0 10px 20px;
+  padding: 0;
+}
+
+li {
+  line-height: 1.5;
+}
+
+.project-item, .experience-item, .edu-item {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
