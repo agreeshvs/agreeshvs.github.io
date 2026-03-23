@@ -1,106 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agreesh V S - Resume</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreesh VS | Senior Full Stack Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <div class="container">
+
+    <nav>
+        <div class="logo">AGREESH.VS</div>
+        <ul>
+            <li><a href="#about">Arsenal</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#experience">History</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+    </nav>
+
     <header>
-      <h1>Agreesh V S</h1>
-      <p class="contact">
-        📍 Angamaly &nbsp; | &nbsp; ✉️ <a href="mailto:agreesh777@gmail.com">agreesh777@gmail.com</a> &nbsp; | &nbsp; 📞 <a href="tel:+919744648006">9744648006</a> <br/>
-        🔗 <a href="https://www.linkedin.com/in/agreesh-v-s-b04051122/">LinkedIn</a> &nbsp; | &nbsp; 💻 <a href="https://github.com/agreeshvs">GitHub</a>
-      </p>
+        <div class="profile-wrapper">
+            <div class="profile-container">
+                <img src="./profile.png" alt="Agreesh VS" class="profile-img">
+            </div>
+        </div>
+        <h1>Agreesh VS</h1>
+        <p>Full Stack Engineer driving enterprise innovation with Angular (v4-v16), Node.js, and high-performance API
+            architectures.</p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/agreeshvs" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/agreeshvs" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:agreesh777@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
     </header>
 
-    <section>
-      <h2>Summary</h2>
-      <p>
-        Front-End Developer with over 6 years of experience in building scalable, responsive, and user-focused web applications.
-        Skilled in Angular frameworks, cross-platform optimization, and collaboration within agile teams to deliver seamless digital experiences.
-        Known for translating complex requirements into elegant, high-performing solutions. Also experienced in developing and integrating APIs using ColdFusion and Node.js.
-      </p>
+    <section id="about">
+        <h2>Technical <span>Arsenal</span></h2>
+        <div class="skills-container">
+            <span class="skill-badge">Angular 4-16+</span>
+            <span class="skill-badge">TypeScript</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">ColdFusion (Lucee)</span>
+            <span class="skill-badge">RxJS</span>
+            <span class="skill-badge">PostgreSQL (pgAdmin)</span>
+            <span class="skill-badge">MSSQL</span>
+            <span class="skill-badge">SmartAdmin Framework</span>
+            <span class="skill-badge">SCSS / Bootstrap 5</span>
+            <span class="skill-badge">Agile / Jira</span>
+            <span class="skill-badge">Git / Version Control</span>
+        </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li><strong>Front-end:</strong> Angular 4/11, HTML5, CSS3, JavaScript, TypeScript, Bootstrap, jQuery, Smart Admin Templates</li>
-        <li><strong>Backend:</strong> Node.js, ColdFusion</li>
-        <li><strong>Database:</strong> Microsoft SQL Server, PostgreSQL, MongoDB</li>
-        <li><strong>Version Control:</strong> Git, GitHub, Git Bash</li>
-        <li><strong>Tools:</strong> Visual Studio Code, NetBeans</li>
-      </ul>
+    <!-- Background transition happens when this section is scrolled into -->
+    <section id="projects" class="project-section">
+        <h2>Enterprise <span>Impact</span></h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <i class="fas fa-cubes"></i>
+                <h3>iomarket Business Portal</h3>
+                <p>Architecting the frontend core for a global B2B transaction platform. Successfully managing complex
+                    states and modular Angular architectures for high-scale enterprise use.</p>
+                <div class="project-tech">ANGULAR • NODE.JS • ENTERPRISE UI</div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Invoice Automation</h3>
+                <p>Implemented end-to-end PDF parsing and data digitalization workflows, reducing manual accounting
+                    overhead by 80% for international business partners.</p>
+                <div class="project-tech">TYPESCRIPT • SQL SERVER • AUTOMATION</div>
+            </div>
+            <div class="project-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>EDI Exchange Engine</h3>
+                <p>Developed secure Electronic Data Interchange gateways using Node.js and Lucee to ensure compliant
+                    document sync between logistics giants.</p>
+                <div class="project-tech">LUCEE • API SECURITY • DATA INTEGRITY</div>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Software Engineer – iomarket Software Services Pvt. Ltd.</h3>
-        <p class="sub">Thrissur | Aug 2019 – Present</p>
-        <ul>
-          <li>Developed and maintained Angular-based modules for a business portal.</li>
-          <li>Integrated and managed RESTful APIs using Node.js and ColdFusion.</li>
-          <li>Designed and delivered scalable features based on dynamic client requirements.</li>
-          <li>Conducted manual testing and debugging to ensure software quality.</li>
-        </ul>
-      </div>
-
-      <div class="experience-item">
-        <h3>PHP Trainee – Infinity Technical Solutions</h3>
-        <p class="sub">Thrissur | Oct 2018 – Aug 2019</p>
-        <ul>
-          <li>Supported development and maintenance of PHP-based company websites.</li>
-          <li>Learned and practiced responsive design and cross-browser compatibility techniques.</li>
-          <li>Collaborated with senior developers to deliver dynamic, user-friendly web pages.</li>
-        </ul>
-      </div>
+    <section id="experience">
+        <h2>Career <span>History</span></h2>
+        <div class="exp-item">
+            <div class="exp-role">Software Engineer</div>
+            <div class="exp-comp">IO Market Software Services • 2019 — Present</div>
+            <ul>
+                <li>Full-stack development Lead for the iomarket portal ecosystem.</li>
+                <li>Pioneered the transition to modular Angular 16 architecture.</li>
+                <li>Engineered high-concurrency data processing pipelines using Lucee and Node.js.</li>
+                <li>Optimized UI/UX performance across browsers for global clients.</li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <div class="exp-role">PHP Trainee</div>
+            <div class="exp-comp">Infinity Technical Solutions • 2018 — 2019</div>
+            <ul>
+                <li>Built responsive dashboards and integrated MySQL backends.</li>
+                <li>Maintained high-traffic company websites with clean, scalable PHP code.</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-      <h2>Education</h2>
-      <div class="edu-item">
-        <h3>Bachelor of Technology in Computer Science</h3>
-        <p class="sub">Kannur University | Aug 2015 – June 2018 | CGPA: 6.5/10</p>
-      </div>
-      <div class="edu-item">
-        <h3>Diploma in Computer Science</h3>
-        <p class="sub">Board of Technical Education | Aug 2012 – Apr 2015 | CGPA: 7.2/10</p>
-      </div>
+    <section id="education">
+        <h2>Academic <span>Roots</span></h2>
+        <div class="edu-grid">
+            <div class="edu-card">
+                <h4>B.Tech in CSE</h4>
+                <p>Kannur University (GEC Wayanad)</p>
+                <p style="color:var(--text-secondary)">Class of 2018</p>
+            </div>
+            <div class="edu-card">
+                <h4>Diploma in CSE</h4>
+                <p>GPTC Perumbavoor</p>
+                <p style="color:var(--text-secondary)">Class of 2015</p>
+            </div>
+            <div class="edu-card">
+                <h4>HSE & SSLC</h4>
+                <p>BHSS Kalady / MRS Aluva</p>
+                <p style="color:var(--text-secondary)">2012 / 2010</p>
+            </div>
+        </div>
     </section>
 
-    <section>
-      <h2>Projects</h2>
-      <div class="project-item">
-        <h3>iomarket Business Portal</h3>
-        <p>Digitized and automated processes from ordering to invoicing, integrating all business partners in a trusted system supporting e-Procurement, Purchase-to-Pay, E-invoice, and more.</p>
-        <p><strong>Tools Used:</strong> Angular 11, CSS, HTML, Node.js, PostgreSQL</p>
-      </div>
+    <footer>
+        <h2 style="margin-bottom: 20px;">Let's Build the <span>Future.</span></h2>
+        <p style="margin-bottom: 40px; color: var(--text-secondary); max-width: 500px; margin-inline: auto;">Currently
+            open to high-impact opportunities in Angular and Full-Stack Engineering.</p>
+        <a href="mailto:agreesh777@gmail.com" class="contact-btn">GET IN TOUCH</a>
+        <p style="margin-top: 80px; font-size: 0.8rem; opacity: 0.3;">&copy; 2026 Agreesh VS. All rights reserved.</p>
+    </footer>
 
-      <div class="project-item">
-        <h3>Gate2b Marketplace – IO Market</h3>
-        <p>A B2B e-commerce marketplace digitizing order processes, invoices, and contracts using ColdFusion and Angular.</p>
-        <p><strong>Tools Used:</strong> Angular 11, CSS, HTML, Node.js, PostgreSQL</p>
-      </div>
+    <script>
+        /**
+         * SCROLL REVEAL & BACKGROUND TRANSITION SCRIPT
+         */
+        const sections = document.querySelectorAll('section');
+        const eduCards = document.querySelectorAll('.edu-card');
+        const projectSection = document.querySelector('.project-section');
 
-      <div class="project-item">
-        <h3>Netgate Customer Solution</h3>
-        <p>Internal marketplace for IO Market handling purchases and shopping carts for internal customers.</p>
-        <p><strong>Tools Used:</strong> ColdFusion, MSSQL, Angular 4, HTML, CSS</p>
-      </div>
-    </section>
+        const observerOptions = {
+            threshold: 0.15
+        };
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Cricket Analytics using Python (Sep 2021)</li>
-        <li>Football Analytics using Python (Sep 2021)</li>
-        <li>WordPress Online Course – Udemy (Nov 2018)</li>
-      </ul>
-    </section>
-  </div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                // Section Fade-in Reveal
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+
+                // Background Color Shift for Project Section
+                if (entry.target.classList.contains('project-section')) {
+                    if (entry.isIntersecting) {
+                        document.body.classList.add('project-focus');
+                    } else {
+                        document.body.classList.remove('project-focus');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        sections.forEach(sec => observer.observe(sec));
+
+        // Staggered reveal for education cards
+        const eduObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('reveal');
+                    }, index * 200);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        eduCards.forEach(card => eduObserver.observe(card));
+    </script>
 </body>
+
 </html>
