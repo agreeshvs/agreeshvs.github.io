@@ -9,251 +9,242 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="shell">
-  <!-- Sidebar -->
-  <aside class="sidebar">
-    <div class="brand">
-      <div class="brand-name">Agreesh V S</div>
-      <div class="brand-role">frontend developer</div>
-    </div>
-    <nav class="filetree" id="filetree">
-      <a href="#about" data-target="about"><span class="dot"></span>about.md</a>
-      <a href="#experience" data-target="experience"><span class="dot"></span>experience.log</a>
-      <a href="#projects" data-target="projects"><span class="dot"></span>projects/</a>
-      <a href="#skills" data-target="skills"><span class="dot"></span>skills.json</a>
-      <a href="#education" data-target="education"><span class="dot"></span>education.yml</a>
-      <a href="#contact" data-target="contact"><span class="dot"></span>contact.sh</a>
-    </nav>
-    <div class="sidebar-footer">
-      Ernakulam, Kerala, India<br>
-      +91-9744648006
-    </div>
-  </aside>
-
-  <!-- Main -->
-  <main>
-    <!-- Hero -->
-    <section class="hero" id="top">
-      <div class="terminal">
-        <div class="terminal-bar">
-          <span></span><span></span><span></span>
-          <span class="terminal-title">agreesh@portfolio: ~</span>
-        </div>
-        <div class="terminal-body">
-          <div class="line"><span class="prompt">$</span> whoami</div>
-          <div class="line" id="typed-line"><span id="typed-out"></span><span class="cursor"></span></div>
-        </div>
-      </div>
-      <p class="hero-sub">Building enterprise Angular and React applications for 7+ years — from legacy Angular migrations to AI-integrated document and workflow platforms.</p>
-      <div class="hero-meta">
-        <div>Experience: <span>7+ years</span></div>
-        <div>Angular: <span>4+ years</span></div>
-        <div>Stack: <span>Angular · React · TypeScript · Node.js</span></div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <h2 class="section-title">about.md</h2>
-      <div class="about-text">
-        <p>I'm a frontend-focused full stack developer with 7+ years of software development experience, including 4+ years specializing in Angular (v4–v18) and growing expertise in React 19 and TypeScript. I started as a ColdFusion developer, moved into Angular, and later expanded into React — picking up Node.js, Kafka-driven microservices, and AI-assisted development along the way.</p>
-        <p>I like taking legacy applications apart and rebuilding them properly: migrating old Angular codebases forward, building reusable Web Component libraries with Module Federation, and shipping accessible, performant UIs. Recently that's included AI-driven platforms like Smart-DOC and Octosuite, built using AI coding assistants (GitHub Copilot, Gemini Code Assist, OpenAI Codex) integrated into the day-to-day workflow.</p>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <h2 class="section-title">experience.log</h2>
-      <div class="timeline">
-        <div class="commit">
-          <div class="commit-head">
-            <span class="commit-role">Software Developer</span>
-            <span class="commit-date">Aug 2019 — Present</span>
-          </div>
-          <div class="commit-company">IO Market Software Services Pvt. Ltd.</div>
-          <ul>
-            <li>Progressed from Trainee to Software Developer within 3 months; later transitioned from ColdFusion development into Angular, building 4+ years of frontend specialization.</li>
-            <li>Migrated core enterprise applications from Angular 4 to Angular 15+, improving performance, maintainability, and long-term supportability.</li>
-            <li>Designed and built reusable UI components, dynamic forms, configurable modules, and responsive dashboards used across multiple business applications.</li>
-            <li>Improved application performance through RxJS best practices, lazy loading, OnPush change detection, and trackBy optimization.</li>
-            <li>Integrated frontend applications with Node.js and ColdFusion APIs, collaborating cross-functionally to deliver end-to-end business solutions.</li>
-          </ul>
-        </div>
-        <div class="commit">
-          <div class="commit-head">
-            <span class="commit-role">Intern</span>
-            <span class="commit-date">Oct 2018 — Aug 2019</span>
-          </div>
-          <ul>
-            <li>Gained foundational software development experience prior to joining IO Market Software Services.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2 class="section-title">projects/</h2>
-      <div class="tabs" id="tabs">
-        <button class="tab-btn active" data-tab="smartdoc">smart-doc<span class="ext">.tsx</span></button>
-        <button class="tab-btn" data-tab="octosuite">octosuite<span class="ext">.tsx</span></button>
-        <button class="tab-btn" data-tab="p2p">p2p<span class="ext">.ts</span></button>
-        <button class="tab-btn" data-tab="gate2b">gate2b<span class="ext">.ts</span></button>
-      </div>
-
-      <div class="tab-panel active" id="panel-smartdoc">
-        <div class="proj-title">Smart-DOC — AI-Driven Platform</div>
-        <div class="proj-stack">React 19 · TypeScript · Vite · Tailwind · Microservices</div>
-        <ul>
-          <li>Engineered an AI-driven enterprise document processing and analytics platform with interactive OCR verification and event-driven microservices architecture.</li>
-          <li>Developed the SmartDoc Admin Portal (React 19, TypeScript, Vite) for document queue management, batch processing, and clerk review workflows, using AI coding assistants (GitHub Copilot, Gemini Code Assist, OpenAI Codex) to speed up feature delivery.</li>
-          <li>Built an interactive OCR PDF/image viewer with real-time bounding-box inspection and AI-assisted automated field matching.</li>
-          <li>Co-created a shared Web Components library (wc-library) with Module Federation, standardizing components across micro-apps.</li>
-          <li>Built analytics dashboards in Recharts and implemented English/German i18n with WCAG accessibility compliance.</li>
-        </ul>
-      </div>
-
-      <div class="tab-panel" id="panel-octosuite">
-        <div class="proj-title">Octosuite Services Platform — AI-Integrated Platform</div>
-        <div class="proj-stack">React · TypeScript</div>
-        <ul>
-          <li>Built an AI-integrated microservices platform for secure file exchange, eBilling, document processing, and workflow orchestration, using AI tools (GitHub Copilot, Gemini Code Assist, OpenAI Codex) throughout the development lifecycle to accelerate delivery and improve code quality.</li>
-          <li>Converted application pages into reusable Web Components consumed across multiple applications in a microservices-based platform.</li>
-          <li>Built dynamic workflow and flow-diagram visualization components with labels and tooltips.</li>
-          <li>Implemented Company, User, and Administration modules with CRUD operations, validation, and API integration.</li>
-          <li>Built drag-and-drop functionality and reusable UI components to improve user experience.</li>
-        </ul>
-      </div>
-
-      <div class="tab-panel" id="panel-p2p">
-        <div class="proj-title">P2P — Purchase-to-Pay System</div>
-        <div class="proj-stack">Angular</div>
-        <ul>
-          <li>Migrated the application from Angular 4 to Angular 15+ and developed approval workflow systems with optimized UI rendering.</li>
-        </ul>
-      </div>
-
-      <div class="tab-panel" id="panel-gate2b">
-        <div class="proj-title">Gate2B — Invoice Automation &amp; EDI</div>
-        <div class="proj-stack">Angular · Node.js</div>
-        <ul>
-          <li>Built onboarding, recurring payment, and invoice processing modules with API integrations and responsive UI enhancements.</li>
-        </ul>
-      </div>
-
-      <div class="side-projects">
-        <h3>// personal &amp; ongoing</h3>
-        <div class="side-card">
-          <div class="side-card-head">
-            <span class="side-card-title">Code Snippet &amp; Developer Collaboration Platform</span>
-            <span class="side-card-links">
-              <a href="https://react-snippet-app.vercel.app/" target="_blank" rel="noopener">live</a><a href="#" target="_blank" rel="noopener">github</a>
-            </span>
-          </div>
-          <p>Full-stack platform (React, Node.js) for developers to store, search, manage, and share reusable code snippets. Built both frontend and backend.</p>
-        </div>
-        <div class="side-card">
-          <div class="side-card-head">
-            <span class="side-card-title">AI-Enhanced Full-Stack Development (MERN)</span>
-            <span class="side-card-links mono" style="color:var(--muted)">ongoing · Entri Elevate</span>
-          </div>
-          <p>Learning React, Node.js, Express.js, MongoDB, and AI-assisted development workflows.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <h2 class="section-title">skills.json</h2>
-      <div class="skills-block">
-<pre class="skill-row"><span class="b">{</span>
-  <span class="k">"frontend"</span><span class="s">:</span> <span class="v">["Angular (v4–v18)", "React 19", "TypeScript", "JavaScript (ES6+)", "RxJS", "Vite", "Tailwind CSS", "HTML5", "CSS3", "SCSS", "Bootstrap", "Web Components", "Module Federation", "Angular CDK", "Reactive Forms"]</span><span class="b">,</span>
-  <span class="k">"backend"</span><span class="s">:</span> <span class="v">["Node.js", "ColdFusion", "REST APIs", "Kafka (event-driven microservices)"]</span><span class="b">,</span>
-  <span class="k">"database"</span><span class="s">:</span> <span class="v">["MySQL", "PostgreSQL", "multi-database microservice architecture"]</span><span class="b">,</span>
-  <span class="k">"dataViz"</span><span class="s">:</span> <span class="v">["Recharts", "interactive dashboards", "analytics reporting"]</span><span class="b">,</span>
-  <span class="k">"tools"</span><span class="s">:</span> <span class="v">["Git", "GitHub", "Jira", "Postman", "GitHub Copilot", "Gemini Code Assist", "OpenAI Codex"]</span><span class="b">,</span>
-  <span class="k">"practices"</span><span class="s">:</span> <span class="v">["Microservices", "Component Architecture", "Workflow Automation", "Drag-and-Drop UI", "Performance Optimization", "i18n & Accessibility (WCAG)"]</span>
-<span class="b">}</span></pre>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <h2 class="section-title">education.yml</h2>
-      <div>
-        <div class="edu-row">
-          <span class="edu-degree">B.Tech in Computer Science</span>
-          <span class="edu-year">2018</span>
-        </div>
-        <div class="edu-row">
-          <span class="edu-degree">Diploma in Computer Science</span>
-          <span class="edu-year">2015</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <h2 class="section-title">contact.sh</h2>
-      <div class="contact-block">
-        <p class="lead">Open to frontend and full-stack roles working with Angular and React. Reach out any of these ways:</p>
-        <ul class="contact-list">
-          <li><span class="label">email</span> <a href="mailto:agreesh777@gmail.com">agreesh777@gmail.com</a></li>
-          <li><span class="label">phone</span> <span>+91-9744648006</span></li>
-          <li><span class="label">location</span> <span>Ernakulam, Kerala, India</span></li>
-          <li><span class="label">linkedin</span> <a href="https://in.linkedin.com/in/agreeshvs" target="_blank" rel="noopener">https://in.linkedin.com/in/agreeshvs</a></li>
-          <li><span class="label">github</span> <a href="https://github.com/agreeshvs" target="_blank" rel="noopener">https://github.com/agreeshvs</a></li>
-        </ul>
-      </div>
-    </section>
-  </main>
+<!-- Sidebar -->
+<aside class="sidebar">
+<div class="brand">
+<div class="brand-name">Agreesh V S</div>
+<div class="brand-role">frontend developer</div>
 </div>
+<nav class="filetree" id="filetree">
+<a href="#about" data-target="about"><span class="dot"></span>about.md</a>
+<a href="#experience" data-target="experience"><span class="dot"></span>experience.log</a>
+<a href="#projects" data-target="projects"><span class="dot"></span>projects/</a>
+<a href="#skills" data-target="skills"><span class="dot"></span>skills.json</a>
+<a href="#education" data-target="education"><span class="dot"></span>education.yml</a>
+<a href="#contact" data-target="contact"><span class="dot"></span>contact.sh</a>
+</nav>
+<div class="sidebar-footer">
+Ernakulam, Kerala, India<br>
++91-9744648006
+</div>
+</aside>
 
+<!-- Main -->
+<main>
+<!-- Hero -->
+<section class="hero" id="top">
+<div class="terminal">
+<div class="terminal-bar">
+<span></span><span></span><span></span>
+<span class="terminal-title">agreesh@portfolio: ~</span>
+</div>
+<div class="terminal-body">
+<div class="line"><span class="prompt">$</span> whoami</div>
+<div class="line" id="typed-line"><span id="typed-out"></span><span class="cursor"></span></div>
+</div>
+</div>
+<p class="hero-sub">Building enterprise Angular and React applications for 7+ years — from legacy Angular migrations to AI-integrated document and workflow platforms.</p>
+<div class="hero-meta">
+<div>Experience: <span>7+ years</span></div>
+<div>Angular: <span>4+ years</span></div>
+<div>Stack: <span>Angular · React · TypeScript · Node.js</span></div>
+</div>
+</section>
+
+<!-- About -->
+<section id="about">
+<h2 class="section-title">about.md</h2>
+<div class="about-text">
+<p>I'm a frontend-focused full stack developer with 7+ years of software development experience, including 4+ years specializing in Angular (v4–v18) and growing expertise in React 19 and TypeScript. I started as a ColdFusion developer, moved into Angular, and later expanded into React — picking up Node.js, Kafka-driven microservices, and AI-assisted development along the way.</p>
+<p>I like taking legacy applications apart and rebuilding them properly: migrating old Angular codebases forward, building reusable Web Component libraries with Module Federation, and shipping accessible, performant UIs. Recently that's included AI-driven platforms like Smart-DOC and Octosuite, built using AI coding assistants (GitHub Copilot, Gemini Code Assist, OpenAI Codex) integrated into the day-to-day workflow.</p>
+</div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+<h2 class="section-title">experience.log</h2>
+<div class="timeline">
+<div class="commit">
+<div class="commit-head">
+<span class="commit-role">Software Developer</span>
+<span class="commit-date">Aug 2019 — Present</span>
+</div>
+<div class="commit-company">IO Market Software Services Pvt. Ltd.</div>
+<ul>
+<li>Progressed from Trainee to Software Developer within 3 months; later transitioned from ColdFusion development into Angular, building 4+ years of frontend specialization.</li>
+<li>Migrated core enterprise applications from Angular 4 to Angular 15+, improving performance, maintainability, and long-term supportability.</li>
+<li>Designed and built reusable UI components, dynamic forms, configurable modules, and responsive dashboards used across multiple business applications.</li>
+<li>Improved application performance through RxJS best practices, lazy loading, OnPush change detection, and trackBy optimization.</li>
+<li>Integrated frontend applications with Node.js and ColdFusion APIs, collaborating cross-functionally to deliver end-to-end business solutions.</li>
+</ul>
+</div>
+<div class="commit">
+<div class="commit-head">
+<span class="commit-role">Intern</span>
+<span class="commit-date">Oct 2018 — Aug 2019</span>
+</div>
+<ul>
+<li>Gained foundational software development experience prior to joining IO Market Software Services.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+<h2 class="section-title">projects/</h2>
+<div class="tabs" id="tabs">
+<button class="tab-btn active" data-tab="smartdoc">smart-doc<span class="ext">.tsx</span></button>
+<button class="tab-btn" data-tab="octosuite">octosuite<span class="ext">.tsx</span></button>
+<button class="tab-btn" data-tab="p2p">p2p<span class="ext">.ts</span></button>
+<button class="tab-btn" data-tab="gate2b">gate2b<span class="ext">.ts</span></button>
+</div>
+<div class="tab-panel active" id="panel-smartdoc">
+<div class="proj-title">Smart-DOC — AI-Driven Platform</div>
+<div class="proj-stack">React 19 · TypeScript · Vite · Tailwind · Microservices</div>
+<ul>
+<li>Engineered an AI-driven enterprise document processing and analytics platform with interactive OCR verification and event-driven microservices architecture.</li>
+<li>Developed the SmartDoc Admin Portal (React 19, TypeScript, Vite) for document queue management, batch processing, and clerk review workflows, using AI coding assistants (GitHub Copilot, Gemini Code Assist, OpenAI Codex) to speed up feature delivery.</li>
+<li>Built an interactive OCR PDF/image viewer with real-time bounding-box inspection and AI-assisted automated field matching.</li>
+<li>Co-created a shared Web Components library (wc-library) with Module Federation, standardizing components across micro-apps.</li>
+<li>Built analytics dashboards in Recharts and implemented English/German i18n with WCAG accessibility compliance.</li>
+</ul>
+</div>
+<div class="tab-panel" id="panel-octosuite">
+<div class="proj-title">Octosuite Services Platform — AI-Integrated Platform</div>
+<div class="proj-stack">React · TypeScript</div>
+<ul>
+<li>Built an AI-integrated microservices platform for secure file exchange, eBilling, document processing, and workflow orchestration, using AI tools (GitHub Copilot, Gemini Code Assist, OpenAI Codex) throughout the development lifecycle to accelerate delivery and improve code quality.</li>
+<li>Converted application pages into reusable Web Components consumed across multiple applications in a microservices-based platform.</li>
+<li>Built dynamic workflow and flow-diagram visualization components with labels and tooltips.</li>
+<li>Implemented Company, User, and Administration modules with CRUD operations, validation, and API integration.</li>
+<li>Built drag-and-drop functionality and reusable UI components to improve user experience.</li>
+</ul>
+</div>
+<div class="tab-panel" id="panel-p2p">
+<div class="proj-title">P2P — Purchase-to-Pay System</div>
+<div class="proj-stack">Angular</div>
+<ul>
+<li>Migrated the application from Angular 4 to Angular 15+ and developed approval workflow systems with optimized UI rendering.</li>
+</ul>
+</div>
+<div class="tab-panel" id="panel-gate2b">
+<div class="proj-title">Gate2B — Invoice Automation &amp; EDI</div>
+<div class="proj-stack">Angular · Node.js</div>
+<ul>
+<li>Built onboarding, recurring payment, and invoice processing modules with API integrations and responsive UI enhancements.</li>
+</ul>
+</div>
+<div class="side-projects">
+<h3>// personal &amp; ongoing</h3>
+<div class="side-card">
+<div class="side-card-head">
+<span class="side-card-title">Code Snippet &amp; Developer Collaboration Platform</span>
+<span class="side-card-links">
+<a href="https://react-snippet-app.vercel.app/" target="_blank" rel="noopener">live</a><a href="https://github.com/arehvsdev/react-snippet-app" target="_blank" rel="noopener">github</a>
+</span>
+</div>
+<p>Full-stack platform (React, Node.js) for developers to store, search, manage, and share reusable code snippets. Built both frontend and backend.</p>
+</div>
+<div class="side-card">
+<div class="side-card-head">
+<span class="side-card-title">AI-Enhanced Full-Stack Development (MERN)</span>
+<span class="side-card-links mono" style="color:var(--muted)">ongoing · Entri Elevate</span>
+</div>
+<p>Learning React, Node.js, Express.js, MongoDB, and AI-assisted development workflows.</p>
+</div>
+</div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+<h2 class="section-title">skills.json</h2>
+<div class="skills-block">
+<pre class="skill-row"><span class="b">{</span>
+<span class="k">"frontend"</span><span class="s">:</span> <span class="v">["Angular (v4–v18)", "React 19", "TypeScript", "JavaScript (ES6+)", "RxJS", "Vite", "Tailwind CSS", "HTML5", "CSS3", "SCSS", "Bootstrap", "Web Components", "Module Federation", "Angular CDK", "Reactive Forms"]</span><span class="b">,</span>
+<span class="k">"backend"</span><span class="s">:</span> <span class="v">["Node.js", "ColdFusion", "REST APIs", "Kafka (event-driven microservices)"]</span><span class="b">,</span>
+<span class="k">"database"</span><span class="s">:</span> <span class="v">["MySQL", "PostgreSQL", "multi-database microservice architecture"]</span><span class="b">,</span>
+<span class="k">"dataViz"</span><span class="s">:</span> <span class="v">["Recharts", "interactive dashboards", "analytics reporting"]</span><span class="b">,</span>
+<span class="k">"tools"</span><span class="s">:</span> <span class="v">["Git", "GitHub", "Jira", "Postman", "GitHub Copilot", "Gemini Code Assist", "OpenAI Codex"]</span><span class="b">,</span>
+<span class="k">"practices"</span><span class="s">:</span> <span class="v">["Microservices", "Component Architecture", "Workflow Automation", "Drag-and-Drop UI", "Performance Optimization", "i18n &amp; Accessibility (WCAG)"]</span>
+<span class="b">}</span></pre>
+</div>
+</section>
+
+<!-- Education -->
+<section id="education">
+<h2 class="section-title">education.yml</h2>
+<div>
+<div class="edu-row">
+<span class="edu-degree">B.Tech in Computer Science</span>
+<span class="edu-year">2018</span>
+</div>
+<div class="edu-row">
+<span class="edu-degree">Diploma in Computer Science</span>
+<span class="edu-year">2015</span>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+<h2 class="section-title">contact.sh</h2>
+<div class="contact-block">
+<p class="lead">Open to frontend and full-stack roles working with Angular and React. Reach out any of these ways:</p>
+<ul class="contact-list">
+<li><span class="label">email</span> <a href="mailto:agreesh777@gmail.com">agreesh777@gmail.com</a></li>
+<li><span class="label">phone</span> <span>+91-9744648006</span></li>
+<li><span class="label">location</span> <span>Ernakulam, Kerala, India</span></li>
+<li><span class="label">linkedin</span> <a href="https://in.linkedin.com/in/agreeshvs" target="_blank" rel="noopener">https://in.linkedin.com/in/agreeshvs</a></li>
+<li><span class="label">github</span> <a href="https://github.com/agreeshvs" target="_blank" rel="noopener">https://github.com/agreeshvs</a></li>
+</ul>
+</div>
+</section>
+</main>
+</div>
 <footer>© <span id="year"></span> Agreesh V S — built with HTML, CSS &amp; a bit of terminal nostalgia.</footer>
 
 <script>
-  // Typed hero effect (single orchestrated animation on load)
-  (function(){
-    var target = document.getElementById('typed-out');
-    var text = "Agreesh V S — Frontend Developer";
-    var i = 0;
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduce){ target.textContent = text; return; }
-    function tick(){
-      if(i <= text.length){
-        target.textContent = text.slice(0, i);
-        i++;
-        setTimeout(tick, 38);
-      }
-    }
-    tick();
-  })();
+// Typed hero effect (single orchestrated animation on load)
+(function(){
+var target = document.getElementById('typed-out');
+var text = "Agreesh V S — Frontend Developer";
+var i = 0;
+var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(reduce){ target.textContent = text; return; }
+function tick(){
+if(i <= text.length){
+target.textContent = text.slice(0, i);
+i++;
+setTimeout(tick, 38);
+}
+}
+tick();
+})();
 
-  // Tabs
-  document.querySelectorAll('.tab-btn').forEach(function(btn){
-    btn.addEventListener('click', function(){
-      document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
-      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
-      btn.classList.add('active');
-      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
-    });
-  });
+// Tabs
+document.querySelectorAll('.tab-btn').forEach(function(btn){
+btn.addEventListener('click', function(){
+document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.remove('active'); });
+document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+btn.classList.add('active');
+document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+});
+});
 
-  // Scroll spy for sidebar
-  var links = document.querySelectorAll('#filetree a');
-  var sections = Array.from(links).map(function(l){ return document.getElementById(l.dataset.target); });
-  function onScroll(){
-    var pos = window.scrollY + 120;
-    var current = sections[0];
-    sections.forEach(function(sec){ if(sec && sec.offsetTop <= pos){ current = sec; } });
-    links.forEach(function(l){ l.classList.toggle('active', current && l.dataset.target === current.id); });
-  }
-  document.addEventListener('scroll', onScroll);
-  onScroll();
-
-  document.getElementById('year').textContent = new Date().getFullYear();
+// Scroll spy for sidebar
+var links = document.querySelectorAll('#filetree a');
+var sections = Array.from(links).map(function(l){ return document.getElementById(l.dataset.target); });
+function onScroll(){
+var pos = window.scrollY + 120;
+var current = sections[0];
+sections.forEach(function(sec){ if(sec && sec.offsetTop <= pos){ current = sec; } });
+links.forEach(function(l){ l.classList.toggle('active', current && l.dataset.target === current.id); });
+}
+document.addEventListener('scroll', onScroll);
+onScroll();
+document.getElementById('year').textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
